@@ -1,80 +1,172 @@
-# AI Machine Learning CA3
+# Machine Learning Pipeline AI
 
-This repository contains the third Artificial Intelligence course assignment focused on machine learning techniques and model evaluation.
+This repository contains an Artificial Intelligence course assignment focused on building and evaluating machine learning models for classification and regression tasks.
+
+The project covers the full machine learning workflow, including preprocessing, feature engineering, model training, evaluation, prediction generation, and model comparison.
 
 ## Overview
 
-The project includes several machine learning tasks covering classification, regression, ensemble methods, and model analysis.
+The assignment is based on a fictional AI service called **Match-UT**, designed to predict different student-related academic and behavioral outcomes using machine learning techniques.
 
-Topics include:
+The project includes multiple supervised learning tasks such as binary classification, multi-class classification, and regression.
 
-- Decision Tree implementation from scratch
-- Decision Tree classification with Scikit-Learn
-- Naive Bayes text classification
+## Main Topics
+
+- Decision Tree implementation and analysis
+- Naive Bayes classification
+- Text classification
 - Multi-class classification
+- Ensemble learning
 - Random Forest
-- Bagging
-- AdaBoost
-- Gradient Boosting
+- Boosting methods
 - XGBoost
-- Feature Engineering
-- Bias-Variance Analysis
-- Regression Models
-
-## Project Structure
-
-```text
-.
-├── CA3.ipynb
-├── AI_CA3.pdf
-├── datasets
-├── prediction files
-└── README.md
-```
+- Regression modeling
+- Bias-Variance analysis
+- Model evaluation
 
 ## Assignment Parts
 
-### Part 1
+### Part 1 — Project Completion Prediction
 
-Project completion prediction using a Decision Tree implemented from scratch.
+A binary classification task that predicts whether a group project will be completed on time.
 
-### Part 2
+This part includes:
 
-Email classification using:
+- Decision Tree implementation from scratch
+- Entropy/Gini-based splitting
+- Tree depth control
+- Feature engineering
+- Validation-based evaluation
 
-- Naive Bayes
-- Decision Tree
+### Part 2 — Email Importance Classification
 
-### Part 3
+A text classification task that classifies emails as important or spam.
 
-Student crisis prediction using:
+This part includes:
 
-- Decision Tree
+- Text preprocessing
+- Bag-of-Words representation
+- Binary and count-based vectorization
+- Naive Bayes classification
+- Decision Tree comparison
+
+### Part 3 — Student Crisis Type Prediction
+
+A multi-class classification task that predicts the type of student crisis before an exam.
+
+This part includes:
+
+- Data preprocessing
+- Missing value handling
+- Outlier management
+- Categorical encoding
+- Feature engineering
+- Decision Tree classification
 - Random Forest
 - Bagging
-- Boosting Models
-- One-vs-Rest Classification
+- Boosting models
+- One-vs-Rest classification
 
-### Part 4
+### Part 4 — Final Exam Score Prediction
 
-Final exam score prediction using:
+A regression task that predicts the final exam score of students.
 
-- DecisionTreeRegressor
-- RandomForestRegressor
+This part includes:
+
+- Decision Tree Regressor
+- Random Forest Regressor
 - XGBoost Regressor
-
-The assignment also includes a practical bias-variance analysis experiment.
+- MSE calculation
+- MAE calculation
+- R² Score calculation
+- Bias-Variance analysis
 
 ## Technologies
 
 - Python
+- Jupyter Notebook
 - NumPy
 - Pandas
 - Scikit-Learn
 - XGBoost
 - Matplotlib
-- Jupyter Notebook
+- Machine Learning
+- Data Analysis
+
+## Repository Structure
+
+```text
+.
+├── CA3.ipynb
+├── AI_CA3.pdf
+├── part2_dataset.csv
+├── part2_test.csv
+├── part2_test_predictions_binary_nb.csv
+├── part2_test_predictions_count_nb.csv
+├── part3_dataset.csv
+├── part3_test.csv
+├── part3_test_predictions.csv
+├── part4_dataset.csv
+├── part4_test.csv
+├── part4_test_predictions_RandomForestRegressor.csv
+├── s1_part1_dataset.csv
+├── s1_part1_test.csv
+├── s1_part2_dataset.csv
+├── s1_part2_test.csv
+├── s1_part2_test_predictions.csv
+├── s1_part2_test_predictions_binary_nb.csv
+├── s1_part2_test_predictions_count_nb.csv
+└── README.md
+```
+
+## Files
+
+- `CA3.ipynb` contains the main implementation.
+- `AI_CA3.pdf` contains the original assignment description.
+- Dataset files contain the training and test data used in different parts.
+- Prediction files contain generated outputs for the assignment test sets.
+
+## Evaluation Metrics
+
+The project uses different evaluation metrics depending on the task type.
+
+### Classification
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+
+### Multi-Class Classification
+
+- Overall Accuracy
+- Macro Precision
+- Macro Recall
+- Macro F1 Score
+- Multi-class Confusion Matrix
+
+### Regression
+
+- Mean Squared Error (MSE)
+- Mean Absolute Error (MAE)
+- R² Score
+
+## Key Learning Outcomes
+
+This project helped practice:
+
+- Building machine learning workflows
+- Implementing decision trees from scratch
+- Comparing classical ML models
+- Handling categorical and numerical data
+- Performing feature engineering
+- Evaluating classification and regression models
+- Understanding ensemble learning methods
+- Studying bias-variance behavior experimentally
 
 ## Academic Context
 
-Developed as part of the Artificial Intelligence course assignments at the University of Tehran.
+This project was developed as part of an Artificial Intelligence course assignment at the University of Tehran.
+
+It is organized here for academic documentation and portfolio presentation.
